@@ -1,0 +1,49 @@
+{
+  "name": "restbase-mod-table-mysql",
+  "description": "RESTBase table storage using mysql for testing purposes",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wikimedia/restbase-mod-table-sqlite.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "storage",
+    "buckets",
+    "tables",
+    "mysql"
+  ],
+  "author": "Wikimedia Service Team <services@wikimedia.org>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://phabricator.wikimedia.org/tag/restbase/"
+  },
+  "homepage": "https://github.com/wikimedia/restbase-mod-table-sqlite",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "extend": "^3.0.2",
+    "fast-json-stable-stringify": "^2.0.0",
+    "generic-pool": "^3.4.2",
+    "js-yaml": "^3.12.0",
+    "lru-cache": "^4.1.3",
+    "restbase-mod-table-spec": "^1.2.0",
+    "mysql": "^2.17.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint-config-wikimedia": "^0.10.0",
+    "eslint-plugin-jsdoc": "^3.9.1",
+    "eslint-plugin-json": "^1.2.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1"
+  },
+  "scripts": {
+    "test": "npm run lint; mocha",
+    "lint": "eslint --max-warnings 0 --ext .js --ext .json .",
+    "coverage": "[ -f test_db ] && rm test_db; nyc --reporter=lcov _mocha",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  }
+}
