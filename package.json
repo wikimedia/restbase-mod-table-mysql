@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/wikimedia/restbase-mod-table-sqlite",
   "dependencies": {
-    "bluebird": "^3.5.2",
+    "bluebird": "^3.7.1",
     "extend": "^3.0.2",
     "fast-json-stable-stringify": "^2.0.0",
     "generic-pool": "^3.4.2",
