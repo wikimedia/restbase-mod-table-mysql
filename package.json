@@ -1,11 +1,11 @@
 {
   "name": "restbase-mod-table-mysql",
-  "description": "RESTBase table storage using mysql for testing purposes",
+  "description": "RESTBase table storage using mysql",
   "version": "0.1.1",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/wikimedia/restbase-mod-table-sqlite.git"
+    "url": "https://github.com/wikimedia/restbase-mod-table-mysql.git"
   },
   "keywords": [
     "REST",
@@ -15,12 +15,15 @@
     "tables",
     "mysql"
   ],
-  "author": "Wikimedia Service Team <services@wikimedia.org>",
+  "contributors": [
+    "Wikimedia Service Team <services@wikimedia.org>",
+    "Femiwiki Team <admin@femiwiki.com> (https://femiwiki.com/)"
+  ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://phabricator.wikimedia.org/tag/restbase/"
+    "url": "https://phabricator.wikimedia.org/tag/restbase-mysql/"
   },
-  "homepage": "https://github.com/wikimedia/restbase-mod-table-sqlite",
+  "homepage": "https://github.com/wikimedia/restbase-mod-table-mysql",
   "dependencies": {
     "bluebird": "^3.5.2",
     "extend": "^3.0.2",
